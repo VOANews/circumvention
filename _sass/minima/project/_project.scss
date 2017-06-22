@@ -1,0 +1,258 @@
+// Put project-specific CSS here.
+
+.voa__project {
+
+
+	strong {
+		font-family: Arial, sans-serif;
+	}
+
+	.voa__story h3 {
+		font-size: 24px;
+		margin-top: 50px;
+		text-transform: uppercase;
+	}
+
+
+	.voa__story.overview p:nth-of-type(3){
+		margin-bottom: 30px;
+	}
+	&.english,
+	&.vietnamese,
+	&.russian,
+	&.uzbek {
+		p.intro {
+			font-style: italic;
+		}
+
+		.voa__story.overview p:nth-of-type(-n+3){
+			font-style: italic;
+		}
+
+		.voa__story.overview p:first-of-type {
+			&::first-letter {
+				color: #000;
+				float: left;
+				font-family: "Oswald", Arial, sans-serif;
+			    font-size: 4em;
+			    font-style: normal;
+			    line-height: .9em;
+			    padding: 0px 8px 0 3px;
+			}
+		}
+	}
+
+}
+
+
+
+.icon {
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 1.3em;
+	padding-left: 1.6em;
+	-webkit-print-color-adjust: exact;
+}
+
+.icon.how        { background-image: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icons_how.png); }
+.icon.caution    { background-image: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icons_caution.png); }
+.icon.trap       { background-image: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icons_trap.png); }
+.icon.bottomLine { background-image: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icons_bottomLine.png); }
+.icon.help       { background-image: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icons_help_alt.png); }
+
+/*
+
+#footer { background-color: #333; margin:0; padding:20px; }
+#footer .note { font-weight: bold; font-size: .9em; margin: 20px auto 0 auto; color:#FFF; max-width:900px; padding-bottom: 30px; }
+#footer .note a { color:#f7941e; }
+#footer .note .firstcharacter { font-size: 5.5em; }
+
+
+
+.pageActions { margin: 2em auto 0 auto; width: 90%; }
+
+.nextAction, .shareAction { margin: 0 0 2em 0; }
+
+.actionButton {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.actionButton a {
+	background-color: #66cac4;
+	background-repeat: no-repeat;
+	border: 1px solid #33b9b1;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #fff;
+	font-size: .8em;
+	font-weight: bold;
+	padding: 4px 8px 4px 26px;
+	text-decoration: none;
+}
+
+.actionButton.moreInfo a {
+	background-image: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/info-circle_ffffff_16.png);
+	background-position: 4px 55%;
+}
+
+.actionButton.downloadTool a {
+	background-image: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/download_ffffff_16.png);
+	background-position: 4px 50%;
+}
+
+.actionButton a:hover, 
+.actionButton a:active {
+	background-color: #00a79d;
+}
+
+.sharing {
+	display: inline-block;
+	margin: 0 1em 0 0;
+	vertical-align: middle;
+}
+
+*/
+.toolsTable {
+	background-color:#FFF; 
+	margin:0; 
+	padding:0;
+	border-top:5px dotted #999; 
+	padding: 20px 0; 
+	margin-top:50px
+}
+
+table#tools {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+table#tools td {
+	border: 0;
+	border-top: 1px solid #CCC;
+	padding: 0;
+}
+
+table#tools td:nth-child(1) { height:40px; }
+table#tools td:nth-child(1) a { font-weight: bold; color:#f15a29; }
+
+table#tools td a {
+	text-decoration: none;
+	margin: 0;
+	padding:0;
+	width: 90%;
+	height:100%;
+	padding-left: 20px;
+}
+table#tools tr { cursor: pointer; cursor: hand; }
+table#tools tr th { cursor: default !important; }
+table#tools tr:hover td { background-color: #CCC; }
+table#tools tr:hover td a { color: #000; }
+table#tools tr th span { display: none; white-space: nowrap; }
+table#tools tr th.metric, table#tools tr td.metric { display: none; }
+
+table#tools tr th.toolName {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 24px;
+	padding-left: 20px
+}
+
+table#tools tr td.metric{
+	margin: 0;
+	padding: 3px;
+	width: 30px;
+	height: 20px;
+}
+
+table#tools th.metric { height: 30px; }
+table#tools td.true { background: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icon_check.png) center 50% no-repeat; }
+table#tools tr:hover td.true { background: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icon_checkHover.png) center 50% no-repeat !important; }
+
+table#tools th.metric:nth-child(2) { background: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icon_anonymity.png) center top no-repeat; }
+table#tools th.metric:nth-child(3) { background: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icon_circumvention.png) center top no-repeat; }
+table#tools th.metric:nth-child(4) { background: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icon_portability.png) center top no-repeat; }
+table#tools th.metric:nth-child(5) { background: url(https://www.voanews.com/MediaAssets2/projects/circumvention/img/icon_encryption.png) center top no-repeat; }
+
+
+
+/* RTL styles */
+.rtl #menu #titleBar h1 { float: right; }
+.rtl #menu #titleBar img { float: left; }
+
+.rtl .fullWidth .story h3 { margin: 2em 5% 0 auto; }
+.rtl .icon { background-position: right top; padding-right: 1.6em; padding-left: 0; }
+.rtl table#tools tr th.toolName { padding-left: 0; padding-right: 20px; text-align: right; }
+.rtl table#tools td a { padding: 0 20px 0 0; }
+.rtl .firstcharacter { float: right; margin-left: 8px; margin-right: 3px; }
+
+.rtl .actionButton { margin-right: 0; margin-left: 10px; }
+.rtl .actionButton a { padding: 4px 26px 4px 8px; }
+.rtl .actionButton.moreInfo a { background-position: right 4px top 55%; }
+.rtl .actionButton.downloadTool a { background-position: right 4px top 50%; }
+.rtl .sharing { margin: 0 0 0 1em; padding-top: 10px; }
+
+/* somehow facebook button alignment is different when RTL */
+/*.rtl .share-fb { padding-bottom: 14px; }*/
+
+
+
+@media ( min-width: 500px ) {
+	img.left { width: 45%; float: left; margin: 20px 20px 20px 5%; }
+	img.right { width: 45%; float: right; margin: 20px 5% 20px 20px; }
+	/*
+	#menu #titleBar h1 { font-size: 1.5em; padding: .25em 0; }
+	#menu ul li a { padding: 8px 2%; width: 96%; }
+
+	.fullWidth .story h3.subhed { font-size: 2em; }
+	*/
+	table#tools tr td.metric { width: 50px; }
+	table#tools tr th.metric, table#tools tr td.metric {
+		display: table-cell;
+	}
+
+	table#tools tr:hover td {
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	
+}
+
+
+@media ( min-width:750px ) {
+	/*
+	.fullWidth h1 { font-size: 3em; }
+	.fullWidth h2.kicker { background-color:#f7941e; color:#FFF; margin: auto; margin-top:56px; padding: 8px 20px; font-size: 1.2em; min-width: 30%; }
+
+	.fullWidth .story p { font-size: 1.2em; line-height: 1.5em; }
+	.fullWidth .story p.intro { font-size: 1.4em; line-height: 1.7em; }
+	.fullWidth .story h3 { font-size: 2em; }
+	.fullWidth .story h3.tagline { width:60%; margin: 0 auto; font-size: 2.5em; }
+
+	.fullWidth ul.listView { margin:20px auto 0 auto; max-width: 900px; width: 90%; list-style-type: disc; padding-left: 40px; }
+	.fullWidth ul.listView li { border-top: none;  padding:8px 0 8px 20px; margin:0; font-weight: bold; color:#f15a29; }
+	.fullWidth ul.listView a li:hover { background-color: #FFF; }
+	.fullWidth ul.listView a li { text-decoration: underline; }
+
+	.fullWidth .story .note { font-size: 1em; }
+	#footer .note { padding-bottom: 60px; }
+
+	//#footer .note .firstcharacter { font-size: 2em; }
+	*/
+	table#tools tr th span {
+		display: block;
+	}
+	table#tools tr th.metric, table#tools tr td.metric { padding-left: 10px; padding-right: 10px; }
+
+	table#tools th.metric { height: 50px; vertical-align: bottom; text-transform: uppercase; font-size: 11px; }
+
+	.nextAction, .shareAction { display: inline-block; }
+	.nextAction { margin-right: 4em; }
+	.sharing { margin-top: 3px; padding-top: 0; }
+
+	.rtl .nextAction { margin-right: 0; margin-left: 4em; }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "circumvention-translations-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "debug": "~2.1.1",
+    "express": "~4.12.2",
+    "jsonfile": "^2.0.0",
+    "tabletop": "^1.3.5"
+  },
+  "author": "Brian Williamson"
+}

@@ -1,0 +1,156 @@
+/* Basic grid */
+
+.voa__grid,
+.voa__grid__full {
+	margin: 0 auto 1rem auto;
+	max-width: $media__extra-large;
+	padding: 0 5%;
+	width: 100%;
+}
+
+.voa__grid__full {
+	padding: 0;
+}
+
+.voa__grid:before,
+.voa__grid:after,
+.voa__grid__full:before,
+.voa__grid__full:after {
+	content: " ";
+	display: table;
+}
+
+.voa__grid:after,
+.voa__grid__full:after {
+	clear: both;
+}
+
+
+.voa__grid__element,
+.voa__grid__one-half,
+.voa__grid__one-third {
+	margin: 0 auto;
+	padding: 0;
+	vertical-align: top;
+	width: 100%;
+}
+
+.voa__grid__one-half:first-of-type {
+	margin-bottom: 30px;
+}
+
+
+.voa__flex-grid {
+	display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: stretch; 
+	min-height: 100%;
+	width: 100%;
+
+	.voa__flex-grid__one-third {
+		margin-bottom: 10px;
+		width: 100%;
+
+		@media only screen and (min-width: $media__medium) {
+			width: 32%; 
+			min-height: 100%; 
+		}
+	}
+
+	.voa__flex-grid__two-thirds {
+		margin-bottom: 10px;
+		width: 100%;
+
+		@media only screen and (min-width: $media__medium) {
+			width: 65%; 
+			min-height: 100%; 
+		}
+	}
+}
+
+
+
+@media only screen and (min-width: $media__medium) and (max-width: $media__large--) {
+	.voa__grid__element {
+		display: inline-block;
+		margin-right: 1.5%;
+		width: 48.2%;
+	}
+
+	.voa__grid__element:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: $media__large) {
+	.voa__grid__element {
+		display: inline-block;
+		margin-right: 1.25%;
+		width: 32.5%;
+	}
+
+	.voa__grid__element:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.voa__grid__one-half:first-of-type {
+		margin-bottom: 30px;
+		padding-right: 20px;
+	}
+}
+
+@media only screen and (min-width: $media__medium) {
+	.voa__grid__one-half {
+		display: inline-block;
+		margin-right: 1.5%;
+		vertical-align: top;
+		width: 48.2%;
+	}
+
+	.voa__grid__one-half:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.voa__grid__one-half:first-of-type {
+		margin-bottom: 0;
+	}
+
+	.voa__grid__one-third {
+		display: inline-block;
+		margin-right: 2%;
+		vertical-align: top;
+		width: 31%;
+
+		&.voa__hang-right {
+			margin-right: 0;
+			padding-left: 2.5%;
+			width: 33%;
+		}
+
+		&.voa__grid__float {
+			display: block;
+			float: right;
+		}
+	}
+	.voa__grid__one-third:nth-child(3n) {
+		margin-right: 0%;
+	}
+	.voa__grid__two-thirds {
+		display: inline-block;
+		margin-right: 0%;
+		vertical-align: top;
+		width: 66%;
+
+		&.voa__grid__float {
+			display: block;
+			float: left;
+		}
+	}
+}
+
+@media only screen and (min-width: $media__large) {
+	.voa__grid {
+		margin-bottom: 0;
+	}
+}

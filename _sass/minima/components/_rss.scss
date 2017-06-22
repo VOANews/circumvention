@@ -1,0 +1,25 @@
+.voa__rss {
+	margin-top: 0;
+	padding-left: 0;
+}
+.voa__rss li{
+	border-bottom: $border__dotted-light;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	list-style: none;
+}
+
+.voa__rss li:last-of-type{
+	border-bottom: none;
+}
+
+.voa__rss li a{
+	color: #333;
+	text-decoration: none;
+}
+
+.voa__rss li a:hover {
+	color: $color__voa-blue;
+	text-decoration: underline;
+}

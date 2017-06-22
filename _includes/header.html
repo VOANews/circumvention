@@ -1,0 +1,68 @@
+<header class="site-header" role="banner">
+
+	<div class="voa__navbar {{ site.data.overview[ page.langnumber ].direction }}" >
+
+		<div class="voa__grid__full">
+
+			<div class="voa__grid">
+
+				<a href="https://www.voanews.com" class="voa__navbar__link"><div class="voa__navbar__logo"></div></a><a href="./" class="voa__navbar__title" style="font-family: 'Oswald', Arial, sans-serif;">
+				{% if site.data.overview[page.langnumber].twoColorTitlePart1 != ""%}
+					{{ site.data.overview[page.langnumber].twoColorTitlePart1 }}
+					<span style="color: orange;">{{ site.data.overview[page.langnumber].twoColorTitlePart2 }}</span>
+				{% else %}
+					{{ site.data.overview[page.langnumber].title }}
+				{% endif %}
+				</a>
+
+				<div id="menuButton" class="voa__navbar__toggle"></div>
+
+				<nav id="main-nav" role="navigation" class="main-menu-nav">
+
+					<ul id="main-menu" class="sm sm-clean" data-smartmenus-id="14762810590939192">
+
+						<li class="voa__navbar__comparison"><a href="javascript:void(0);" class="has-submenu" id="sm-14762810590939192-1" aria-haspopup="true" aria-controls="sm-14762810590939192-2" aria-expanded="false"><span class="sub-arrow">+</span>{{ site.data.overview[ page.langnumber ].comparisonTitle }}</a>
+
+							<ul id="sm-14762810590939192-2" role="group" aria-hidden="true" aria-labelledby="sm-14762810590939192-1" aria-expanded="false">
+								<li class="menuOverview"><a href="./">{{ site.data.toc[ page.langnumber ].overview }}</a></li>
+
+								{% comment %}loop through all posts and if they match the language of the parent, then include them.{% endcomment %}
+								{% for post in site.posts reversed %}
+									{% if post.langnumber == page.langnumber %}<li><a href="{{ post.url | relative_url }}">{{ site.data[post.tool][ page.langnumber ].toolName }}</a></li>{% endif %}
+								{% endfor %}
+
+							</ul>
+
+						</li>
+
+						<li class="voa__navbar__language__toggle"><a href="javascript:void(0);" class="has-submenu voa__navbar__language" id="" aria-haspopup="true" aria-controls="" aria-expanded="false"><div class="translation-icon"></div><span class="sub-arrow">+</span><span class="voa__no-tablet social-share-text ">{{ site.data.dictionary[ page.langnumber ].translations }}</span></a>
+
+							<ul id="" role="group" aria-hidden="true" aria-labelledby="" aria-expanded="false">
+
+								<li><a lang="en" href="{{ site.baseurl }}/">English</a></li>
+								<li><a lang="zh" href="{{ site.baseurl }}/chinese/">中国</a></li>
+								<li><a lang="fa" href="{{ site.baseurl }}/persian/">فارسی</a></li>
+								<li><a lang="ru" href="{{ site.baseurl }}/russian/">Pусский</a></li>
+								<li><a lang="ur" href="{{ site.baseurl }}/urdu/">اردو</a></li>
+								<li><a lang="ur" href="{{ site.baseurl }}/uzbek/">O‘zbek</a></li>
+								<li><a lang="vi" href="{{ site.baseurl }}/vietnamese/">Tiếng Việt</a></li>
+
+							</ul>
+
+						</li>
+
+						<li><a id="shareTwitter" class="social-share-link twitter" href="javascript:void(0);"><div class="social-icon"></div><span class="social-share-text">{{ site.data.dictionary[ page.langnumber ].twitter }}</span></a></li>
+						<li><a id="shareFacebook" class="social-share-link facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprojects.voanews.com%2F"><div class="social-icon"></div><span class="social-share-text">{{ site.data.dictionary[ page.langnumber ].facebook }}</span></a></li>
+
+					</ul>
+
+				</nav>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</header>
+

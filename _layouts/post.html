@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="post voa__grid__full" itemscope itemtype="http://schema.org/BlogPosting">
+
+	<header class="post-header voa__grid">
+		<!--<h3 class="voa__kicker" style="background-color: orange;">{{ page.categories | first }}</h3>
+		<h1 class="post-title" itemprop="name headline" style="margin-bottom: 20px;">{{ page.title | escape }}</h1>
+	   <!--<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>-->
+	</header>
+
+
+	{% if page.image and page.link-project %}<a href="{{ page.link-project }}"/>{% endif %}
+		{% if page.image %}<img alt="" src="{{ site.url }}/img/{{ page.image }}" />{% endif %}
+	{% if page.image and page.link-project %}</a>{% endif %}
+
+	<div class="post-content voa__grid" itemprop="articleBody">
+		<div class="voa__story">
+		  {{ content }}
+		</div>
+	</div>
+
+	{% if site.disqus.shortname %}
+		{% include disqus_comments.html %}
+	{% endif %}
+
+</article>

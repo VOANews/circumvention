@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="home">
+
+	<section class="voa__section" style="margin-top: 60px;">
+
+		<div class="voa__grid__full">
+
+			<div class="voa__grid">
+
+				<h1 style="font-family: 'Oswald', Arial, sans-serif; font-size: 3em; text-align: center;">{{ site.data.overview[ page.langnumber ].headline }}</h1>
+
+				<h3 class="tagline" style="font-family: 'Amatic SC', Arial, sans-serif; font-size: 2.5em; text-align: center; font-weight: normal; ">{{ site.data.overview[ page.langnumber ].tagline }}</h3>
+
+				<p class="byline" style="text-align: center;">{{ site.data.overview[ page.langnumber ].authorByline }}</p>
+				<br/>
+
+			</div>
+
+			<img class="full illustration" src="https://www.voanews.com/MediaAssets2/projects/circumvention/img/circumvention.jpg">
+
+			<div class="voa__grid">
+				<p class="voa__credit">{{ site.data.overview[page.langnumber].illustrationCredit }}</p>
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<section class="voa__section">
+
+		<div class="voa__grid__full">
+
+			<div class="voa__grid">
+
+				<div class="voa__story overview">
+
+					{{ content }}
+
+				</div><!-- .voa__story -->
+
+			</div><!-- .voa__grid -->
+
+		</div><!-- .voa__grid__full-->
+
+	</section>
+
+</div>

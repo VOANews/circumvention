@@ -8,7 +8,7 @@
 	</div>
 	<div class='panel col3 block comicIntro'>
 		<div class='subpanel third' style='margin-right:0; padding-right:0;'>
-			<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/intro_5{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel' style='margin-right:0; padding-right:0;'/>
+			<img src='{{ site.canonical_url_base }}/img/intro_5{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel' style='margin-right:0; padding-right:0;'/>
 		</div>
 		<div class='subpanel twothirds'>
 			<p id='introduction' class='textPad all balloon' style='padding: 15px; text-align:center; background-color:#FFF;'>{{ site.data.tor[ page.langnumber ].introduction }}</p>
@@ -18,38 +18,38 @@
 
 	<div class='panel col2'>
 		<p id='panel1' class='textPad blackBox' style='' >{{ site.data.tor[ page.langnumber ].panel1 }}</p>
-		<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/comic_TOR_2{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
+		<img src='{{ site.canonical_url_base }}/img/comic_TOR_2{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
 	</div>
 
 	<div class='panel col4'>
 		<p id='panel2' style='margin-bottom:10px;'>{{ site.data.tor[ page.langnumber ].panel2 }}</p>
-		<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/comic_TOR_1_background{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
+		<img src='{{ site.canonical_url_base }}/img/comic_TOR_1_background{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
 	</div>
 
 	<div class='panel col2'>
 		<p id='panel3' class='textPad blackBox'>{{ site.data.tor[ page.langnumber ].panel3 }}</p>
-		<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/comic_TOR_3{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
+		<img src='{{ site.canonical_url_base }}/img/comic_TOR_3{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
 	</div>
 
 	<div class='panel col1 fillColumn' style='background-color:#ada7d3;' >
 		<p id='panel4' class='textPad' style='background-color:#ada7d3;' >{{ site.data.tor[ page.langnumber ].panel4 }}</p>
-		<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/comic_TOR_4{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
+		<img src='{{ site.canonical_url_base }}/img/comic_TOR_4{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
 	</div>
 
 	<div class='panel block col3' style=''>
 		<p id='panel5' class='textPad'>{{ site.data.tor[ page.langnumber ].panel5 }}</p><br/>
 		<div class='subpanel third'>
-			<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/comic_TOR_5_entry{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
+			<img src='{{ site.canonical_url_base }}/img/comic_TOR_5_entry{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
 			<h3 id='panel5_inset1_title'>{{ site.data.tor[ page.langnumber ].panel5_inset1_title }}</h3>
 			<p id='panel5_inset1' class='textPad description'>{{ site.data.tor[ page.langnumber ].panel5_inset1 }}</p>
 		</div>
 		<div class='subpanel third'>
-			<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/comic_TOR_5_relay{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
+			<img src='{{ site.canonical_url_base }}/img/comic_TOR_5_relay{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
 			<h3 id='panel5_inset2_title'>{{ site.data.tor[ page.langnumber ].panel5_inset2_title }}</h3>
 			<p id='panel5_inset2' class='textPad description'>{{ site.data.tor[ page.langnumber ].panel5_inset2 }}</p>
 		</div>
 		<div class='subpanel third'>
-			<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/comic_TOR_5_exit{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
+			<img src='{{ site.canonical_url_base }}/img/comic_TOR_5_exit{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel'/>
 			<h3 id='panel5_inset3_title'>{{ site.data.tor[ page.langnumber ].panel5_inset3_title }}</h3>
 			<p id='panel5_inset3' class='textPad description'>{{ site.data.tor[ page.langnumber ].panel5_inset3 }}</p> 
 		</div>
@@ -59,11 +59,11 @@
 
 	<div class='panel col3 block'>
 		<p id='panel6' class='textPad' style='background-color:#fbb040;'>{{ site.data.tor[ page.langnumber ].panel6 }}</p>
-		<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/comic_TOR_6{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel' style='position:relative'/>
+		<img src='{{ site.canonical_url_base }}/img/comic_TOR_6{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel' style='position:relative'/>
 	</div>
 
 	<div class='panel col3 block'>
 		<p id='panel7' class='textPad blackBox'>{{ site.data.tor[ page.langnumber ].panel7 }}</p>
-		<img src='https://www.voanews.com/MediaAssets2/projects/circumvention/img/comic_TOR_7{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel' style='position:relative'/>
+		<img src='{{ site.canonical_url_base }}/img/comic_TOR_7{% if site.data.overview[ page.langnumber ].direction == 'rtl'%}_rtl{% endif %}.png' class='imagePanel' style='position:relative'/>
 	</div>
 </div>

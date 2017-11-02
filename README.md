@@ -6,7 +6,7 @@ This is a refactored version of the ["VOA Circumventing Censorship"](http://proj
 
 ### Issues and updates ###
 
-Any suggestions for updates, corrections or clarifications can be submitted as a [Github issue](https://github.com/bbgvisualjournalist/circumvention/issues) or by emailing me directly.
+Any suggestions for updates, corrections or clarifications can be submitted as a [Github issue](https://github.com/voanews/circumvention/issues).
 
 
 
